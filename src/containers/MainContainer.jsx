@@ -7,7 +7,7 @@ import ErrorComponent from "../components/ErrorComponent/ErrorComponent";
 
 const { pictureTopics } = CONFIG;
 
-class MainController extends Component {
+class MainContainer extends Component {
   constructor(props) {
     super(props);
 
@@ -80,6 +80,6 @@ class MainController extends Component {
   }
 }
 
-MainController.propTypes = {};
+MainContainer.propTypes = {};
 
-export default MainController;
+export default MainContainer;

@@ -1,6 +1,6 @@
 import React from "react";
 import ErrorBoundaryComponent from "../ErrorBoundaryComponent";
-import MainController from "../../controllers/MainController";
+import MainContainer from "../../containers/MainContainer";
 import "./style.css";
 
 const RootComponent = () => {
@@ -8,7 +8,7 @@ const RootComponent = () => {
     <ErrorBoundaryComponent>
       <div className="main-wrapper">
         {/*<HeaderComponent />*/}
-        <MainController />
+        <MainContainer />
       </div>
     </ErrorBoundaryComponent>
   );

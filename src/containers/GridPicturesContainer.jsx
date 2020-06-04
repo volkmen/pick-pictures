@@ -10,7 +10,7 @@ import ButtonComponent from "../components/ButtonComponent";
 
 const { cols, rows } = CONFIG;
 
-class GridPicturesController extends Component {
+class GridPicturesContainer extends Component {
   constructor(props) {
     super(props);
 
@@ -149,7 +149,7 @@ class GridPicturesController extends Component {
   }
 }
 
-GridPicturesController.propTypes = {
+GridPicturesContainer.propTypes = {
   topics: arrayOf(string),
   topic: string,
   resetTopic: func,
@@ -158,4 +158,4 @@ GridPicturesController.propTypes = {
   amount: number,
 };
 
-export default GridPicturesController;
+export default GridPicturesContainer;

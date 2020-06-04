@@ -2,7 +2,7 @@ import React from "react";
 import { arrayOf, func, number, string } from "prop-types";
 
 import SelectTopicComponent from "../SelectTopicComponent";
-import GridPicturesController from "../../controllers/GridPicturesController";
+import GridPicturesContainer from "../../containers/GridPicturesContainer";
 import "./style.scss";
 
 const MainComponent = (props) => {
@@ -11,7 +11,7 @@ const MainComponent = (props) => {
   return (
     <main className={"main"}>
       {currentTopic ? (
-        <GridPicturesController {...anotherProps} topic={props.currentTopic} />
+        <GridPicturesContainer {...anotherProps} topic={props.currentTopic} />
       ) : (
         <SelectTopicComponent topics={props.topics} setTopic={props.setTopic} />
       )}
