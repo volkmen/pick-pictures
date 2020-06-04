@@ -1,0 +1,13 @@
+.result {
+  position: absolute;
+  width: 100%;
+  top: calc(50% - 2rem);
+
+  &__title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+  }
+}

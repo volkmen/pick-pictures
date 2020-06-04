@@ -1,0 +1,49 @@
+$sc-phone: "only screen and (max-width : 480px)";
+$sc-tablet: "only screen and (min-width : 481px) and (max-width: 720px)";
+$sc-laptop: "only screen and (min-width : 721px) and (max-width: 1280px)";
+$sc-desktop: "only screen and (min-width : 1281px)";
+
+.select-topic {
+  width: 75%;
+  max-width: 400px;
+  background: #dddddd;
+  position: relative;
+  box-sizing: border-box;
+  border-radius: 3px;
+  color: black;
+
+  &__list {
+    position: relative;
+  }
+  &-list {
+    list-style: none;
+
+    &__title {
+      font-size: 1.75rem;
+      width: 100%;
+      text-align: center;
+      padding: 2rem;
+      font-weight: bold;
+      box-sizing: border-box;
+      background: #3990df;
+      border-bottom: 1px solid #222222;
+      color: white;
+    }
+
+    &__item {
+      text-indent: 2rem;
+      padding: 20px 0;
+      width: 100%;
+      text-transform: uppercase;
+      background: transparent;
+      transition: background-color 0.1s;
+    }
+
+    &__item:hover {
+      cursor: pointer;
+      transition: background-color 0.25s;
+      color: white;
+      background: #3990df;
+    }
+  }
+}

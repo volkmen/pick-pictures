@@ -1,0 +1,47 @@
+.grid-pictures {
+  width: 400px;
+  background: whitesmoke;
+  position: relative;
+  margin-bottom: 1rem;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #cccccc;
+
+  &__content {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  &-content {
+    &__row {
+      display: flex;
+      flex-grow: 1;
+      flex-shrink: 1;
+      width: 100%;
+
+      div {
+        background: silver;
+        flex-grow: 1;
+        flex-shrink: 1;
+        width: 100%;
+      }
+    }
+  }
+
+  &__title {
+    font-size: 1.25rem;
+    background: #3990df;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+}
+
+.bold {
+  font-weight: bold;
+}
